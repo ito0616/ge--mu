@@ -8,3 +8,8 @@ body {
     /* ここを書き換える! */
     background: linear-gradient(135deg, #80caff 0%, #be9cff 100%);
 }
+ .app-icons{
+    position: absolute;
+     top: 100px;
+     left: 50px;
+ }
