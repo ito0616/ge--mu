@@ -19,3 +19,8 @@ p {
 hi{
     text-align: left;
 }
+　.game-description{
+     position: absolut;
+     top: 150px;
+     left: 100px;
+ }
