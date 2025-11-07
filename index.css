@@ -13,6 +13,9 @@ body {
      top: 100px;
      left: 100px;
  }
-.game-description{
+p {
+    text-align: left;
+}
+hi{
     text-align: left;
 }
