@@ -1,1 +1,10 @@
-
+body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    /* ここを書き換える! */
+    background: linear-gradient(135deg, #80caff 0%, #be9cff 100%);
+}
