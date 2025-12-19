@@ -6,7 +6,7 @@ body {
     height: 100vh;
     margin: 0;
     /* ここを書き換える! */
-    background: linear-gradient(135deg, #80caff 0%, #be9cff 100%);
+    background: linear-gradient(135deg, #0068b7 0%, #009977 100%);
 }
  app-icons{
     position: absolute;
