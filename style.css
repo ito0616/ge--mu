@@ -24,16 +24,29 @@ ul {
   margin: auto;
   text-align: center;
   padding: 30px;
+  flex-basis: 100%;
 }
 
-.works li {
-  margin: 20px 0;
-  font-size: 1.2em;
+.works {
+  padding: 30px;
+  margin: auto;
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
 }
 
 .works-1 {
   display: flex;
+  justify-content: center;
+}
+
+.works a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
 }
 
 body {
