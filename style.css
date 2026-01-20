@@ -19,7 +19,7 @@ ul {
   text-align: center;
 }
 
-.works h2 {
+.works h1 {
   font-size: 1.5em;
   margin: auto;
   text-align: center;
@@ -34,4 +34,10 @@ ul {
 
 .works-1 {
   display: flex;
+}
+
+body {
+  background-color: white;
+  text-align: center;
+  font-size: clamp(0.5vw, 1.4vw, 1.9vw);
 }
