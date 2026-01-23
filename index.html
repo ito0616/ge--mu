@@ -12,11 +12,14 @@
 		.app-icon img:hover{transform:translateY(-3px) scale(1.02);box-shadow:0 10px 24px rgba(0,0,0,0.18)}
 		.app-label{margin-top:12px;font-size:14px}
 	</style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Aldrich&family=M+PLUS+Rounded+1c&family=Rubik+Scribble&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="hero">
-      <h1>ノベルゲーム</h1>
+      <h1>Noberu-game</h1>
     </div>
 
     <div class="about">
@@ -36,36 +39,53 @@
 
     <div class="works">
       <h1>製作した作品</h1>
-
-      <div class="game">
-        <a href="example">
-          <img src="icons/icon.svg" alt="ゲーム" width="300" height="300">
-        </a>
-        
-      </div>
-
-
-      <div class="honbun">
         <div class="works-1">
           <a href="https://ito0616.github.io/horror-website/tyranoprojects/"
             ><img
               src="icons/roukakurai.jpg"
               alt="呪いのwebサイト"
-              width="120"
-              height="120"
-          /></a>
+              width="230"
+              height="230"
+          /><div class="name">
+            <p>
+              呪いのwebサイト
+            </p>
+          </div>
+          <div class="comment">初心者にオススメ！チュートリアルがあるよ！</div>
+        </a>
         </div>
         <div class="works-1">
           <a href="https://nishiuraumi.github.io/browser_2025119_15204/a/"
             ><img
               src="icons/春の学校（日中）.jpg"
               alt="『真っ白な世界に、色付くまで』 2"
-              width="120"
-              height="120"
-          /></a>
+              width="230"
+              height="230"
+          /><div class="name">
+            <p>
+              『真っ白な世界に、色付くまで』 2
+            </p>
+          </div>
+          <div class="comment">やっとことのある人にオススメ！</div>
+        </a>
+    </div>
     </div>
     <div class="sample">
-
+      <div class="carousel">
+        <button class="carousel-btn prev" id="prevBtn">❮</button>
+        <div class="carousel-container">
+          <div class="carousel-slide">
+            <img src="image/sample2.png" alt="サンプル 1" width="300" height="300">
+          </div>
+          <div class="carousel-slide">
+            <img src="image/sample1.png" alt="サンプル 2" width="300" height="300">
+          </div>
+          <div class="carousel-slide">
+            <img src="image/sample3.png" alt="サンプル 3" width="300" height="300">
+          </div>
+        </div>
+        <button class="carousel-btn next" id="nextBtn">❯</button>
+      </div>
     </div>
     <script src="script.js"></script>
   </body>
