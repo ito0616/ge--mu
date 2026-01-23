@@ -11,6 +11,60 @@
 		.app-icon img{width:120px;height:120px;border-radius:24px;box-shadow:0 6px 18px rgba(0,0,0,0.12);transition:transform .12s ease,box-shadow .12s}
 		.app-icon img:hover{transform:translateY(-3px) scale(1.02);box-shadow:0 10px 24px rgba(0,0,0,0.18)}
 		.app-label{margin-top:12px;font-size:14px}
+
+		/* --- Visual Novel Text Box Style --- */
+		.vn-text-box {
+			background-color: rgba(30, 30, 70, 0.85); /* 少し紫がかった濃い青、半透明 */
+			color: white;
+			border: 2px solid #bde0fe; /* 明るい水色 */
+			border-radius: 10px;
+			padding: 25px 35px;
+			margin: 50px auto;
+			max-width: 800px;
+			position: relative;
+			box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+			font-family: 'Zen Maru Gothic', sans-serif;
+		}
+
+		.vn-text-box h1 {
+			background-color: #bde0fe;
+			color: #1e1e46;
+			padding: 6px 18px;
+			border-radius: 8px 8px 0 0;
+			font-size: 1.25em;
+			display: inline-block;
+			margin: -27px 0 15px -37px; /* 親要素のpaddingに合わせて調整 */
+			position: relative;
+			left: 2px; /* borderの太さ分調整 */
+		}
+
+		.vn-text-box p {
+		div.vn-text-box p {
+			line-height: 1.9;
+			font-size: 16px;
+			margin-bottom: 1em;
+		}
+		.vn-text-box p:last-child {
+		div.vn-text-box p:last-child {
+			margin-bottom: 0;
+		}
+
+		/* テキストボックスの右下で跳ねる「次へ」の矢印 */
+		.vn-text-box::after {
+			content: '▼';
+			position: absolute;
+			bottom: 12px;
+			right: 25px;
+			color: #fff;
+			font-size: 18px;
+			animation: vn-bounce 1.5s infinite;
+		}
+
+		@keyframes vn-bounce {
+			0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+			40% { transform: translateY(-8px); }
+			60% { transform: translateY(-4px); }
+		}
 	</style>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,19 +76,17 @@
       <h1>Noberu-game</h1>
     </div>
 
-    <div class="about">
+    <div class="about vn-text-box">
       <h1>ノベルゲームとは</h1>
-      <ul class="honbun">
-          自分が物語の「主人公」になって、たくさん選択肢から自分だけの選択で物語を見届けるゲームです。<br>
-        小説みたいなものですがイラストやアニメーション、BGMなど <br>
-        小説のゲーム版みたいな感じなので本が苦手な方でも楽しめます!!! <br>
-          本が好きな方は本とは違う感覚なのではまってしまうかもしれません！ <br>
+      <p>自分が物語の「主人公」になって、たくさん選択肢から自分だけの選択で物語を見届けるゲームです。</p>
+      <p>小説のようなテキストを読み進めていきますが、イラストやアニメーション、BGMといった演出が加わることで、本が苦手な方でも楽しめます！</p>
+      <p>本が好きな方も、また違った没入感を味わえるので、きっとはまってしまうはずです！</p>
     </div>
 
-    <div class="how-to-play">
+    <div class="how-to-play vn-text-box">
       <h1>遊び方</h1>
-          ゲームの遊び方は物語を読んで、途中に出てくる選択肢をクリックするだけです。 <br>
-        基本的に画面をクリックするだけ!簡単に遊べるのが特徴です。<br>
+      <p>ゲームの遊び方はとてもシンプル。物語を読み進め、途中で現れる選択肢をクリックするだけです。</p>
+      <p>基本的に画面をクリックするだけで進められるので、誰でも簡単に遊べるのが特徴です。</p>
     </div>
 
     <div class="works">
@@ -68,7 +120,6 @@
           </div>
           <div class="comment">やっとことのある人にオススメ！</div>
         </a>
-    </div>
     </div>
     <div class="sample">
       <div class="carousel">
